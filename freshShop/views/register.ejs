@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<%- include('head.ejs'); %>
+
+<body>
+    <%- include('header.ejs'); %>
+    <div class="contact-box-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12">
+                    <div class="contact-form-right">
+                        <h2>Please Register</h2>
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="username" name="name" placeholder="Your Username" required data-error="Please enter your name">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Your Email" id="email" class="form-control" name="name" required data-error="Please enter your email">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="password" name="name" placeholder="Your Password" required data-error="Please enter your Subject">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">                                    
+                                    <div class="submit-button text-center">
+                                        <button class="btn hvr-hover" id="submit" type="submit">Register</button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    <%- include('footer.ejs'); %>
+</body>
+
+</html>
+
+
